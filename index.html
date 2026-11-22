@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare group velocity and phase velocity as a simple wave packet travels.">
+  <title>Wave Packet Dispersion Lab</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<main>
+  <div class="heading">
+    <div><h1>Wave Packet Dispersion Lab</h1><p>Compare group velocity and phase velocity as a simple wave packet travels.</p></div>
+    <a href="https://github.com/netcodermike/wave-packet-dispersion-lab">Project source ↗</a>
+  </div>
+  <div class="workspace">
+    <section class="panel stage" aria-label="Project workspace">
+      <canvas width="760" height="390" aria-label="Carrier wave inside a moving Gaussian envelope"></canvas>
+      <p id="reading" role="status"></p>
+    </section>
+    <section class="panel controls" aria-label="Controls">
+      <form id="settings"><label for="frequency">Carrier wavenumber<output id="frequency-value" for="frequency"></output><input id="frequency" type="range" min="1" max="4" step="0.1" value="2"></label><label for="dispersion">Dispersion coefficient<output id="dispersion-value" for="dispersion"></output><input id="dispersion" type="range" min="0.05" max="0.45" step="0.05" value="0.25"></label><label for="elapsed">Elapsed time<output id="elapsed-value" for="elapsed"></output><input id="elapsed" type="range" min="0" max="5" step="0.05" value="2"></label><button id="play" type="button">Play</button><p>The purple carrier sits inside the dashed teal envelope.</p></form>
+    </section>
+  </div>
+</main>
+</body>
+</html>
